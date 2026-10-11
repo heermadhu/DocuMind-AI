@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic-settings
+python-dotenv
+python-multipart
+httpx
+PyMuPDF
+pytesseract
+pillow
+sentence-transformers
+faiss-cpu
+numpy
+
+# Test and synthetic PDF utilities
+pytest
+reportlab

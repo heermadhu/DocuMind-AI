@@ -1,0 +1,79 @@
+{
+  "description": "Small synthetic corpus with manually verified relevant chunk IDs; intended for offline retrieval comparison.",
+  "chunks": [
+    {
+      "id": "climate-carbon-1",
+      "document_id": "climate-report",
+      "filename": "climate-report.pdf",
+      "page": 1,
+      "text": "Solar and wind generation lowered the facility carbon footprint by 18 percent in 2024."
+    },
+    {
+      "id": "climate-target-1",
+      "document_id": "climate-report",
+      "filename": "climate-report.pdf",
+      "page": 2,
+      "text": "The annual target is to reduce electricity consumption by 10 percent before 2026."
+    },
+    {
+      "id": "climate-flood-1",
+      "document_id": "climate-report",
+      "filename": "climate-report.pdf",
+      "page": 3,
+      "text": "The organization spent 2.4 million dollars on flood defenses in the coastal region."
+    },
+    {
+      "id": "education-tutoring-1",
+      "document_id": "education-report",
+      "filename": "education-report.pdf",
+      "page": 4,
+      "text": "Students receiving tutoring improved exam completion by 12 percentage points."
+    },
+    {
+      "id": "education-target-1",
+      "document_id": "education-report",
+      "filename": "education-report.pdf",
+      "page": 7,
+      "text": "The annual target is to reduce electricity consumption by 10 percent before 2026."
+    },
+    {
+      "id": "coastal-protection-1",
+      "document_id": "coastal-report",
+      "filename": "coastal-report.pdf",
+      "page": 2,
+      "text": "Flood defenses protected three coastal sites from storm surge during the 2024 season."
+    }
+  ],
+  "questions": [
+    {
+      "question": "How much did solar and wind lower carbon footprint in 2024?",
+      "relevant_chunk_ids": ["climate-carbon-1"]
+    },
+    {
+      "question": "What is the electricity consumption reduction target and deadline?",
+      "relevant_chunk_ids": ["climate-target-1", "education-target-1"]
+    },
+    {
+      "question": "How much was spent on flood defenses?",
+      "relevant_chunk_ids": ["climate-flood-1"]
+    },
+    {
+      "question": "What impact did tutoring have on exams?",
+      "relevant_chunk_ids": ["education-tutoring-1"]
+    },
+    {
+      "question": "How many coastal sites did flood defenses protect?",
+      "relevant_chunk_ids": ["coastal-protection-1"]
+    }
+  ],
+  "unsupported_questions": [
+    {
+      "question": "What is the distance from Earth to the Moon?",
+      "relevant_chunk_ids": []
+    },
+    {
+      "question": "Who won the 2032 Olympic marathon?",
+      "relevant_chunk_ids": []
+    }
+  ]
+}

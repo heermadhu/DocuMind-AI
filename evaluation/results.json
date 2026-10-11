@@ -1,0 +1,182 @@
+{
+  "dataset": "dataset.json",
+  "question_count": 5,
+  "chunk_count": 6,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_model_revision": "main",
+  "hybrid_fusion": "Reciprocal Rank Fusion (k=60) of dense cosine-similarity rank and BM25 rank",
+  "limitations": [
+    "Small synthetic dataset; results are not representative of arbitrary PDFs.",
+    "Relevant chunk labels were manually checked against this dataset only.",
+    "No reranker or generated-answer quality is evaluated here.",
+    "Embedding model inference requires its weights to be available locally or downloadable."
+  ],
+  "dense": {
+    "aggregate": {
+      "mrr": 1.0,
+      "recall@1": 0.9,
+      "precision@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "precision@3": 0.39999999999999997,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "precision@5": 0.24,
+      "ndcg@5": 1.0
+    },
+    "per_question": {
+      "How much did solar and wind lower carbon footprint in 2024?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "What is the electricity consumption reduction target and deadline?": {
+        "mrr": 1.0,
+        "recall@1": 0.5,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.6666666666666666,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0
+      },
+      "How much was spent on flood defenses?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "What impact did tutoring have on exams?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "How many coastal sites did flood defenses protect?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      }
+    }
+  },
+  "hybrid": {
+    "aggregate": {
+      "mrr": 1.0,
+      "recall@1": 0.9,
+      "precision@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "precision@3": 0.39999999999999997,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "precision@5": 0.24,
+      "ndcg@5": 1.0
+    },
+    "per_question": {
+      "How much did solar and wind lower carbon footprint in 2024?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "What is the electricity consumption reduction target and deadline?": {
+        "mrr": 1.0,
+        "recall@1": 0.5,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.6666666666666666,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0
+      },
+      "How much was spent on flood defenses?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "What impact did tutoring have on exams?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      },
+      "How many coastal sites did flood defenses protect?": {
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333333333333333,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0
+      }
+    }
+  },
+  "offline_answer_grounding": {
+    "dense": {
+      "supported_answerable_query_rate_at_3": 1.0,
+      "citation_record_integrity_rate": 1.0,
+      "unsupported_query_abstention_rate": 1.0,
+      "unsupported_query_count": 2,
+      "note": "Offline proxy: answers are represented by retrieved passages; this does not judge generated answer entailment."
+    },
+    "hybrid": {
+      "supported_answerable_query_rate_at_3": 1.0,
+      "citation_record_integrity_rate": 1.0,
+      "unsupported_query_abstention_rate": 1.0,
+      "unsupported_query_count": 2,
+      "note": "Offline proxy: answers are represented by retrieved passages; this does not judge generated answer entailment."
+    }
+  }
+}
